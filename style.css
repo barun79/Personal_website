@@ -190,17 +190,41 @@ footer a:hover {
   transform: scale(1.2);
 }
 
-@media (max-width: 600px) {
-  section {
-    margin: 20px;
-    padding: 20px;
+/* ===== Responsive Styles for Mobile ===== */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 28px;
   }
 
-  h1, h2, h3 {
-    font-size: 1.5em;
-  }
-
-  button {
+  .typing-text {
+    font-size: 16px;
     width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section {
+    padding: 30px 15px;
+  }
+
+  .tech-stack img {
+    width: 30px;
+  }
+
+  .contact form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact input,
+  .contact textarea {
+    width: 100%;
+  }
+
+  .social-icons i {
+    font-size: 24px;
   }
 }
