@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- Header Navbar --- */
+header {
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #004d99;
+    font-size: 24px;
+}
+
+.typing-text {
+  color: #0077cc;
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #0077cc;
+  width: 0;
+  animation: typing 4s steps(30, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 300px; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+nav a {
+    margin-left: 20px;
+    font-weight: 600;
+    color: #0077cc;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #004c99;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: linear-gradient(to right, #f0f4f8, #e8f0ff);;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+
+}
+
+h1, h2, h3{
+    text-align: center;
+    color: #004d99;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header{
+    text-align: center;
+}
+
+section {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+section:hover{
+    transform: scale(1.01);
+}
+
+#about p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.project {
+    background-color: #f3faff;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project h3 {
+    color: #0066cc;
+    margin-top: 0px;
+}
+
+input, textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin: 10px 5px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+
+button {
+  background-color: #0077cc;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #0077cc;
+}
+
+button:hover {
+  background-color: #005fa3;
+  box-shadow: 0 0 20px #005fa3, 0 0 30px #005fa3;
+}
+
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #f0f4f8;
+  color: #555;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #0077cc;
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+.social-icons a {
+  margin: 0 10px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a[aria-label="GitHub"] i {
+  color: #181717;
+}
+
+.social-icons a[aria-label="LinkedIn"] i {
+  color: #0A66C2;
+}
+
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+  section {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5em;
+  }
+
+  button {
+    width: 100%;
+  }
+}
